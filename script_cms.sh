@@ -26,7 +26,7 @@ chmod 777 /var/moodledata
 chown -R apache2:apache2 /var/www/html/moodle
 chmod -R 755 /var/www/html/moodle
 rm -rf /etc/httpd2/conf/sites-available/moodle.conf
-cp /home/edu/moodle.conf /etc/httpd2/conf/sites-available/
+cp /home/git/edu/moodle.conf /etc/httpd2/conf/sites-available/
 ln -s /etc/httpd2/conf/sites-available/moodle.conf /etc/httpd2/conf/sites-enabled/
 apachectl configtest
 echo "max_input_vars = 5000" >> /etc/php/8.1/apache2-mod_php/php.ini
