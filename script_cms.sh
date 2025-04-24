@@ -17,7 +17,6 @@ exit;
 
 git clone git://git.moodle.org/moodle.git
 cd moodle
-git branch -a
 git branch --track MOODLE_405_STABLE origin/MOODLE_405_STABLE
 git checkout MOODLE_405_STABLE
 cd
