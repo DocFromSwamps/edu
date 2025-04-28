@@ -1,7 +1,7 @@
-fdisk /dev/sda
+fdisk /dev/sdd
 fdisk /dev/sdc
 fdisk /dev/sdb
-mdadm --create --verbose /dev/md0 -l 5 -n 3 /dev/sda1 /dev/sdc1 /dev/sdb1
+mdadm --create --verbose /dev/md0 -l 5 -n 3 /dev/sdd1 /dev/sdc1 /dev/sdb1
 mkfs.ext4 /dev/md0
 mkdir /raid5
 mount /dev/md0 /raid5
@@ -12,4 +12,3 @@ apt-get install nfs-server
 systemctl enable --now nfs
 echo "/raid5/nfs 192.168.0.67/28(rw,subtree_check)" >> /etc/exports
 exportfs -a
-
