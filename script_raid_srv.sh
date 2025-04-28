@@ -10,6 +10,6 @@ mkdir /raid5/nfs
 apt-get update
 apt-get install nfs-server
 systemctl enable --now nfs
-echo "/raid5/nfs 192.168.0.64/27(rw,subtree_check)" >> /etc/exports
+echo "/raid5/nfs 192.168.0.67/28(rw,subtree_check)" >> /etc/exports
 exportfs -a
 
