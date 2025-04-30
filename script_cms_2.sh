@@ -1,4 +1,4 @@
-git clone git://git.moodle.org/moodle.git
+git clone -b MOODLE_405_STABLE git://git.moodle.org/moodle.git
 cd moodle
 git branch --track MOODLE_405_STABLE origin/MOODLE_405_STABLE
 git checkout MOODLE_405_STABLE
