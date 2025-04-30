@@ -4,7 +4,7 @@ systemctl start mariadb
 mysql_secure_installation
 mysql -u root -p
 
-create database moodledb character set utf8mb4 collate utf8mb4_unicode_ci;
+create database moodledb character set utf8;
 create user 'moodle'@'localhost' identified by 'password';
 grant all privileges on moodledb.* to 'moodle'@'localhost';
 flush privileges;
